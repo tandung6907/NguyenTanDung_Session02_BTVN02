@@ -16,7 +16,7 @@ create table customers(
 create table new_customers(
 	customer_id int primary key,
     full_name varchar(100) not null,
-    email varchar(100) not null,
+    email varchar(100) not null unique,
     age int not null
     check (age > 0)
 );
